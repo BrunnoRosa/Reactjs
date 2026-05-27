@@ -1,0 +1,9 @@
+.header {
+    top: 0;
+    text-align: center;
+    background-color: blue;
+}
+.header h1 {
+    color: brown;
+    font-family: 'Times New Roman', Times, serif;
+}
