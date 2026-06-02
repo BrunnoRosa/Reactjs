@@ -18,22 +18,30 @@ function App() {
   };
   
 
-  return (    
-    <div className='app-container'>
-      <Header/>
-    <main>
-    <Hero />
-    <Timeline />
-    <Galeria />
-    <MainContent/>
-    <Mural />
-    </main>
+  return (
+    <div style={estiloContainer}>
+      {/* 1. O Header fixo no topo */}
+      <Header />
 
-    <Footer />
-
-    
+      {/* 2. As seções com ID para a navegação funcionar */}
+      <section id="inicio">
+        <Hero />
+      </section>
+      
+      <section id="historia">
+        <Timeline />
+      </section>
+      
+      <section id="galeria">
+        <Galeria />
+      </section>
+      
+      <section id="mural">
+        <Mural />
+      </section>
+      <Footer />
     </div>
   );
 }
 
-export default App
+export default App;
