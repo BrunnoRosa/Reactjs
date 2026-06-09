@@ -1,0 +1,39 @@
+.services-list {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  width: 100%;
+  max-width: 700px;
+}
+
+.service-row {
+  display: flex;
+  align-items: center;
+  background: #0d101d;
+  padding: 20px;
+  border-radius: 6px;
+  gap: 20px;
+  transition: all 0.2s ease;
+  cursor: pointer;
+}
+
+.service-row:hover {
+  background: #14182c;
+  transform: scale(1.01);
+}
+
+.service-type {
+  width: 80px;
+  text-align: center;
+  padding: 6px 0;
+  font-size: 0.75rem;
+  font-weight: 800;
+  text-transform: uppercase;
+  border-radius: 4px;
+}
+
+.service-type.fire { background: rgba(255, 68, 0, 0.15); color: #ff4400; border: 1px solid #ff4400; }
+.service-type.electric { background: rgba(255, 222, 0, 0.15); color: #ffde00; border: 1px solid #ffde00; }
+
+.service-info h3 { font-size: 1.1rem; margin-bottom: 4px; }
+.service-info p { color: #7d85a0; font-size: 0.9rem; }
